@@ -1,2 +1,0 @@
-# SiteScanner
-Tool for SEO
