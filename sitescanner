@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Defr\SiteScanner\Command\Command\SiteMapCommand;
+use Defr\SiteScanner\CompareSitemapsCommand;
+use Defr\SiteScanner\Command\SelfUpdateCommand;
+
+$application = new Application("SiteScanner", "1.0.0");
+$application->add(new SiteMapCommand());
+$application->add(new CompareSitemapsCommand());
+$application->add(new SelfUpdateCommand());
+$application->run();

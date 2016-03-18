@@ -1,0 +1,30 @@
+{
+  "name": "dfridrich/sitescanner",
+  "type": "library",
+  "description": "SiteScanner for SEO purposes",
+  "keywords": [
+    "php",
+    "seo",
+    "sitemap"
+  ],
+  "homepage": "https://github.com/dfridrich/SiteScanner",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dennis Fridrich",
+      "email": "fridrich.dennis@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.4|^7.0",
+    "symfony/console": "^3.0",
+    "imangazaliev/didom": "^1.6",
+    "phpoffice/phpexcel": "^1.8",
+    "symfony/filesystem": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Defr\\SiteScanner\\": "src/"
+    }
+  }
+}
